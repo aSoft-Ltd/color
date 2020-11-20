@@ -33,8 +33,8 @@ jobs:
         run: ./gradlew :color-core:build
         working-directory: .
       - name: Publishing color to sontaype nexus staging
-          run: ./gradlew :color-core:publish
-          working-directory: .
+        run: ./gradlew :color-core:publish
+        working-directory: .
       - name: Closing and Releasing repositories
-          run: ./gradlew :color-core:closeAndReleaseRepository
-          working-directory: .
+        run: ./gradlew :color-core:closeAndReleaseRepository
+        working-directory: .
