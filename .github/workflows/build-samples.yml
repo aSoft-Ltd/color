@@ -23,9 +23,6 @@ jobs:
       - name: Making gradlew executable
         run: chmod +x ./gradlew
         working-directory: .
-      - name: Building color-core
+      - name: Building and testing color-core
         run: ./gradlew :color-core:build
-        working-directory: .
-      - name: Testing color-core
-        run: ./gradlew :color-core:allTests
         working-directory: .
