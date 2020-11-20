@@ -1,4 +1,4 @@
-# 0.0.2
+# 0.0.1
 ## Availability
 - Published to maven central
 
@@ -6,12 +6,7 @@
 - Updated to gradle version 6.7
 
 ## New Features
-### gradle-plugins
-- Added the `tz.co.asoft.konfig` plugin
-- Added the `tz.co.asoft.application` plugin
-
-### library
-- Added the `konfig()` method, on all supported platforms
+- Added Colors and ColorSpaces
 
 ## Documentation
 - Update readme
