@@ -18,3 +18,4 @@ pluginManagement {
 rootProject.name = "color"
 
 include(":color-core")
+include(":color-css")
