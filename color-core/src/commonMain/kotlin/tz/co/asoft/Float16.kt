@@ -269,13 +269,9 @@ internal inline class Float16(val halfValue: Short) : Comparable<Float16> {
     /**
      * Returns a [Float16] with the magnitude of this and the sign of [sign]
      */
-    fun withSign(sign: Float16): Float16 =
-        Float16(
-            (
-                    sign.halfValue.toInt() and FP16_SIGN_MASK or
-                            (halfValue.toInt() and FP16_COMBINED)
-                    ).toShort()
-        )
+    fun withSign(sign: Float16) = Float16(
+        (sign.halfValue.toInt() and FP16_SIGN_MASK or (halfValue.toInt() and FP16_COMBINED)).toShort()
+    )
 
     /**
      * Returns the absolute value of the half-precision float.

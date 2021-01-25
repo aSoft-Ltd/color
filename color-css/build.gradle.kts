@@ -8,6 +8,12 @@ plugins {
 kotlin {
     multiplatformLib()
     sourceSets {
+        val commonMain by getting {
+            dependencies {
+                api("org.jetbrains:kotlin-css:${vers.wrappers.css}")
+                api(project(":color-core"))
+            }
+        }
         val commonTest by getting {
             dependencies {
                 api(asoft("test-core", vers.asoft.test))
@@ -18,5 +24,5 @@ kotlin {
 
 aSoftOSSLibrary(
     version = vers.asoft.color,
-    description = "A platform agnostic color library using css"
+    description = "A platform agnostic color library"
 )
