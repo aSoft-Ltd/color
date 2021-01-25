@@ -2,7 +2,7 @@ name: Build & Test
 
 on:
   pull_request:
-    branches: [ dev-master ]
+    branches: [ master-dev ]
 
 jobs:
   test-color-core:
@@ -23,6 +23,6 @@ jobs:
       - name: Making gradlew executable
         run: chmod +x ./gradlew
         working-directory: .
-      - name: Building and testing color-core
-        run: ./gradlew :color-core:build
+      - name: Building and testing project
+        run: ./gradlew build
         working-directory: .
