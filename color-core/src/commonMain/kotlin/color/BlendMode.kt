@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package tz.co.asoft
+package color
 
 /**
  * Algorithms to use when painting on the canvas.

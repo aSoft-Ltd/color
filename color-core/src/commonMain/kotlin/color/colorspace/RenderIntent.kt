@@ -14,9 +14,7 @@
  * limitations under the License.
  */
 
-@file:Suppress("PackageDirectoryMismatch")
-
-package tz.co.asoft
+package color.colorspace
 
 /**
  * A render intent determines how a [connector][Connector]

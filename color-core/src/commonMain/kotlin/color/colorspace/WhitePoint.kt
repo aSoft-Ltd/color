@@ -14,9 +14,7 @@
  * limitations under the License.
  */
 
-@file:Suppress("PackageDirectoryMismatch")
-
-package tz.co.asoft
+package color.colorspace
 
 /**
  * Class for constructing white points used in [RGB][Rgb] color space. The value is
