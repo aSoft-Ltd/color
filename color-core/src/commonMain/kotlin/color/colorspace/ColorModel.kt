@@ -13,10 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
-@file:Suppress("PackageDirectoryMismatch")
-
-package tz.co.asoft
+package color.colorspace
 
 /**
  * A color model is required by a [ColorSpace] to describe the

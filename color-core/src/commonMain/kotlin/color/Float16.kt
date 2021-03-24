@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package tz.co.asoft
+package color
 
 /**
  * The `Float16` class is a wrapper and a utility class to manipulate half-precision 16-bit

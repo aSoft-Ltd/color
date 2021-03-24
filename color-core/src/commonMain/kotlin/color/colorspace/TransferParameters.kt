@@ -14,9 +14,7 @@
  * limitations under the License.
  */
 
-@file:Suppress("PackageDirectoryMismatch")
-
-package tz.co.asoft
+package color.colorspace
 
 /**
  * Defines the parameters for the ICC parametric curve type 4, as
