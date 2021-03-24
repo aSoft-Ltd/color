@@ -7,15 +7,15 @@ plugins {
 
 kotlin {
     multiplatformLib()
-    js(IR) {
-        browser {
-            testTask {
-                useKarma {
-                    useChromiumHeadless()
-                }
-            }
-        }
-    }
+//    js(IR) {
+//        browser {
+//            testTask {
+//                useKarma {
+//                    useChromiumHeadless()
+//                }
+//            }
+//        }
+//    }
     val darwinTargets = listOf(
         macosX64(),
         iosArm64(),
