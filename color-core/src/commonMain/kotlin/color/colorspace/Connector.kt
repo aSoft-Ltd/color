@@ -14,9 +14,7 @@
  * limitations under the License.
  */
 
-@file:Suppress("PackageDirectoryMismatch")
-
-package tz.co.asoft
+package color.colorspace
 
 /**
  * A connector transforms colors from a source color space to a destination

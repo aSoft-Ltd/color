@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package tz.co.asoft
+package color
 
 /**
  * Creates a color filter that applies the blend mode given as the second

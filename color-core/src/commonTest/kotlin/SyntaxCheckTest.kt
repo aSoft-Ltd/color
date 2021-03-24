@@ -1,6 +1,6 @@
-import tz.co.asoft.Color
-import tz.co.asoft.ColorSpaces
-import tz.co.asoft.to255Int
+import color.Color
+import color.colorspace.ColorSpaces
+import color.to255Int
 import kotlin.test.Test
 import kotlin.test.assertEquals
 

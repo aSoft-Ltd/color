@@ -15,8 +15,9 @@
  */
 @file:Suppress("EXPERIMENTAL_API_USAGE", "EXPERIMENTAL_UNSIGNED_LITERALS")
 
-package tz.co.asoft
+package color
 
+import color.colorspace.*
 import kotlin.math.max
 import kotlin.math.min
 

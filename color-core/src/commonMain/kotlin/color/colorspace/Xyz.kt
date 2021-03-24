@@ -14,9 +14,7 @@
  * limitations under the License.
  */
 
-@file:Suppress("PackageDirectoryMismatch")
-
-package tz.co.asoft
+package color.colorspace
 
 /**
  * Implementation of the CIE XYZ color space. Assumes the white point is D50.
