@@ -1,3 +1,7 @@
+# 0.0.40 : 2021.05.02
+
+- Updated to support kotlin 1.5.0
+
 # 0.0.30 : 2021.03.24
 
 - Changed package name from `tz.co.asoft` to `color`
