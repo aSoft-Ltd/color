@@ -5,7 +5,7 @@ object vers {
     object asoft {
         val builders = "1.3.30"
         val color = "0.0.40"
-        val test = "1.1.20"
+        val test = "1.1.30"
     }
 
     object wrappers {
