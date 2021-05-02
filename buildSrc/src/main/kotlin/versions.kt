@@ -1,14 +1,14 @@
 object vers {
-    val kotlin = "1.4.21"
+    val kotlin = "1.5.0"
     val nexus_staging = "0.22.0"
 
     object asoft {
-        val builders = "1.3.0"
-        val color = "0.0.30"
+        val builders = "1.3.30"
+        val color = "0.0.40"
         val test = "1.1.20"
     }
 
     object wrappers {
-        val css = "1.0.0-pre.141-kotlin-1.4.21"
+        val css = "1.0.0-pre.154-kotlin-1.5.0"
     }
 }
