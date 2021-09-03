@@ -1,0 +1,5 @@
+[versions]
+css = "1.0.0-pre.240-kotlin-1.5.30"
+
+[libraries]
+css = { module = "org.jetbrains.kotlin-wrappers:kotlin-css", version.ref = "css" }

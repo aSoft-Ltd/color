@@ -15,7 +15,7 @@ val color = Color(0xFF000000) // Black Color(alpha = ff, red = 0, green = 0, blu
 ## Setup
 ```kotlin
 dependencies {
-    implementation("tz.co.asoft:color-core:+") // please use the latest version possible
+    implementation("tz.co.asoft:color-core:0.0.40") // please use the latest version possible
 }
 ```
 

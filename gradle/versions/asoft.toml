@@ -1,0 +1,9 @@
+[versions]
+color = "0.0.50"
+foundation = "1.4.0"
+
+[libraries]
+expect-core = { module = "tz.co.asoft:expect-core", version.ref = "foundation" }
+
+[plugins]
+library = { id = "tz.co.asoft.library", version.ref = "foundation" }

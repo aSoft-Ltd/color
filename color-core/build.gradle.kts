@@ -1,40 +1,24 @@
 plugins {
-    kotlin("multiplatform")
-    id("tz.co.asoft.library")
-    id("io.codearte.nexus-staging")
+    alias(jetbrains.plugins.kotlin.multiplatform)
+    alias(asoft.plugins.library)
+    alias(nexus.plugins.publish)
     signing
 }
 
 kotlin {
     jvm { library() }
     js(IR) { library() }
-    val darwinTargets = listOf(
-        macosX64(),
-        iosArm64(),
-        iosArm32(),
-        iosX64(),
-        watchosArm32(),
-        watchosArm64(),
-        watchosX86(),
-        tvosArm64(),
-        tvosX64()
-    )
-
-    val linuxTargets = listOf(
-        linuxX64(),
-        linuxArm64(),
-        linuxArm32Hfp()
-    )
+    nativeTargets(false)
     sourceSets {
         val commonTest by getting {
             dependencies {
-                api(asoft("test-core", vers.asoft.test))
+                api(asoft.expect.core)
             }
         }
     }
 }
 
 aSoftOSSLibrary(
-    version = vers.asoft.color,
-    description = "A platform agnostic color library using css"
+    version = asoft.versions.color.get(),
+    description = "A platform agnostic color library"
 )

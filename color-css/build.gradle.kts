@@ -1,31 +1,28 @@
 plugins {
-    kotlin("multiplatform")
-    id("tz.co.asoft.library")
-    id("io.codearte.nexus-staging")
+    alias(jetbrains.plugins.kotlin.multiplatform)
+    alias(asoft.plugins.library)
+    alias(nexus.plugins.publish)
     signing
 }
 
 kotlin {
-    multiplatformLib()
-    iosArm32()
-    iosArm64()
-    iosX64()
+    jvm { library() }
+    js(IR) { library() }
+    iosTargets(true)
     sourceSets {
         val commonMain by getting {
             dependencies {
-                api("org.jetbrains:kotlin-css:${vers.wrappers.css}")
                 api(project(":color-core"))
+                api(kotlinw.css)
             }
         }
         val commonTest by getting {
-            dependencies {
-                api(asoft("test-core", vers.asoft.test))
-            }
+            dependencies { api(asoft.expect.core) }
         }
     }
 }
 
 aSoftOSSLibrary(
-    version = vers.asoft.color,
-    description = "A platform agnostic color library"
+    version = asoft.versions.color.get(),
+    description = "A platform agnostic color library for css"
 )
